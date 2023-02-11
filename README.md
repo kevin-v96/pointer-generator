@@ -7,15 +7,15 @@ This has 4 models:
 3) RNN with attention and pointer-generator network - adapted from the original code by the paper author for Get to the Point (<https://github.com/abisee/pointer-generator> and <https://github.com/laihuiyuan/pointer-generator>) 
 3) Transformer - Fine-tuned mT5 using Huggingface
 
-###Dataset
+### Dataset
 For the first two, I've used the CSV files from Kaggle, which you can find here: <https://www.kaggle.com/datasets/gowrishankarp/newspaper-text-summarization-cnn-dailymail>
 The third model requires chunked data that you can find here under FINISHED_FILES: <https://github.com/JafferWilson/Process-Data-of-CNN-DailyMail>
 For the Transformer model, I've used huggingface, which has the CNN-DM dataset on their datasets API.
 
-##How to run the models
+## How to run the models
 For the first two models and the transformer model, everything should be straightforward - run the cells in the python notebooks.
 
-###Pointer-generator
+### Pointer-generator
 For the pointer-generator model, as I mentioned, I've adapted and debugged the code from the original paper author above.
 Once you've downloaded and unzipped the finished_files, make a log directory in your project folder and update all paths in 
 `utils/config.py`.
